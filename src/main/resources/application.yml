@@ -1,0 +1,22 @@
+server.port: 9903 
+
+management:
+  security:
+    enabled: false   
+    
+#prettify the json output
+spring:
+  jackson:
+    serialization:
+      indent-output: true
+      
+  boot:
+    admin:
+      url: http://localhost:9999
+      
+  h2:
+    console:
+      enabled: true
+
+      
+   
